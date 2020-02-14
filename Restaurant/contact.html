@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+Name: Henry Lin
+Date Created: February 8th, 2020
+Most recent revision: February 10th, 2020
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Crash Course - Contact Us</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<main><!-- The main element conatins all blocks on the page -->
+			<header>
+				<h1>Crash Course</h1>
+			</header>
+		<!-- Link the other pages here -->
+		<nav>
+			 <p><a class="btn" href="index.html">Home</a>
+		   		<a class="btn" href="menu.html">Menu</a>
+				<a class="btn" href="contact.html">Contact Us</a></p>
+		</nav>
+    	<article>
+    		<fieldset>
+    			<div class="col-lg-9 col-md">
+			<form action="request.html" method="POST">
+				<table>
+					<tr>
+						<td><label for="name">Name:</label></td>
+						<td><input type="text" id="name" name="name"></td>
+					</tr>
+					<tr>
+						<td><label for="email">Email:</label></td>
+						<td><input type="text" id="email" name="email"></td>
+					</tr>
+					<tr>
+						<td><label for="phone">Phone:</label></td>
+						<td><input type="text" id="phone" name="phone"></td>
+					</tr>
+					<tr>
+						<td><label for="reason">Reason for Inquiry:</label></td>
+						<td><select id="reason" name="reason">
+							<option value="default" selected="catering">Catering (default)</option>
+							<option value="private">Private Party</option>
+							<option value="feedback">Feedback</option>
+							<option value="other">Other</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><label for="info">Additional Information:</label></td>
+						<td><textarea id="info" name="info"></textarea></td>
+					</tr>
+					<tr>
+							<td><label for="history">Have you been to the restaurant?</label></td>
+							<td><input class="select" type="radio" id="choice1" name="questionaire" value="no">
+							<label class="select" for="choice1">No</label>
+							<input class="select" type="radio" id="choice2" name="questionaire" value="yes">
+							<label class="select" for="choice2">Yes</label>
+							</td>
+					</tr>
+				<tr>
+					<td><label for="contact">Best days to contact you:</label></td>
+					<td><input class="select" type="checkbox" id="mon" name="day" value="mon">
+						<label class="select" for="mon">M</label>
+						<input class="select" type="checkbox" id="tue" name="day" value="tue">
+						<label class="select" for="tue">T</label>
+						<input class="select" type="checkbox" id="wed" name="day" value="wed">
+						<label class="select" for="wed">W</label>
+						<input class="select" type="checkbox" id="thu" name="day" value="thu">
+						<label class="select" for="thu">Th</label>
+						<input class="select" type="checkbox" id="fri" name="day" value="fri">
+						<label class="select" for="fri">F</label></td>
+				</tr>
+				<tr>
+					<td><input class="submit" type="submit" name="send" value="Send Request"></td>
+				</tr>
+			</table>
+			
+		</form>
+	</div>
+	</fieldset>
+		</article>
+		<footer>
+			<p>
+				4253 S Ouch Drive, Accident, Maryland 21520
+			</p>
+			<p>
+				(555) 555-4253
+			</p>
+		</footer>
+	</body>
+</center>
+</html>

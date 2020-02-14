@@ -1,0 +1,101 @@
+/*
+Name: Henry Lin
+Date Created: February 10th, 2020
+Most recent revision: February 10th, 2020
+*/
+body{
+	background-color: #804215;
+	font-family: arial, helvetica, sans-serif;
+	color: #0d1f2d;
+	text-align: justify;
+	max-width: 900px;
+	margin: auto;
+}
+header,footer{
+	background-color: #061739;
+	color: #fff;
+	height: 100px;
+	text-align: center;
+	padding: 20px 10px 20px 10px;
+}
+h1{
+	font-size: 2.5em;
+}
+nav{
+	background-color: #552500;
+    border-top: thin #5DAD55 solid;
+    border-bottom: thin #5DAD55 solid;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 2px;
+}
+nav .btn:hover{
+	background-color: #91D08A;
+	color: #2B426F;
+	font-weight: bold;
+}
+nav .btn:active{
+	font-weight: bold;
+}
+nav .btn:visited{
+	color:#fff;
+}
+nav .btn{
+	background-color: #2B426F;
+	color: #91D08A;
+}
+table{
+	width:100%;
+	text-align: center;
+}
+th{
+	font-size: 1.2em;
+}
+td{
+	vertical-align: top;
+}
+.drink{
+	text-align: left;
+}
+article{
+	background-color: #D49768;
+}
+img{
+	width: 100%;
+	display: block;
+}
+form{
+	display: block;
+
+}
+label{
+	float: right;
+	font-weight: bold;
+}
+input{
+	float: left;
+}
+input.submit{
+	float: right;
+}
+label.select{
+	float:left;
+	font-weight: normal;
+}
+input.select{
+	margin: 5px 5px 0px 5px;
+}
+select{
+	float: left;
+	width: 175px;
+}
+textarea{
+	float: left;
+	width: 175px;
+}
+input.text{
+	width: 200px;
+}
+.clear-float{
+	clear:both;
+}

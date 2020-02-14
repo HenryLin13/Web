@@ -1,0 +1,32 @@
+function rollDice(numSides) {
+  return Math.floor(Math.random() * numSides) + 1;
+}
+
+for (var i = 0; i < 100; i++) {
+  console.log(rollDice());
+}
+
+function luckySeven(current){
+	var timesPlayed = 0;
+	var highestRoll = timesPlayed;
+	var highest = current;
+	if(current<=0 || current){
+		return print("Invalid Bet");
+	}
+	while(current>=1){
+		if(rollDice(6)+rollDice(6) != 7){
+			current--;
+		}
+		else{
+			current+4;
+		}
+		timesPlayed++;
+		if(current>highest){
+			highest = current;
+			highestRoll = timesPlayed;
+		}
+	}
+	var results =[timesPlayed, highest, highestRoll];
+	print("Play again?");
+	return results;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+Name: Henry Lin
+Date Created: February 8th, 2020
+Most recent revision: February 13th, 2020
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Crash Course - Contact Us</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<script type="text/JavaScript" src="restaurant.js"></script>
+	</head>
+	<body>
+	<main><!-- The main element conatins all blocks on the page -->
+	<header class="jumbotron">
+		<h1>Crash Course</h1>
+		<h2 class="font-italic">Southern Food with a Flair!</h2>
+		<h3 class="text-right mt-5">Opening a new location in Boston next month!</h3>
+	</header>
+	<!-- Link the other pages here -->
+	<nav>
+		<a class="btn badge-pill" href="index.html"><i class="fa fa-home">Home</i></a>
+	   	<a class="btn badge-pill" href="menu.html">Menu</a>
+		<a class="btn badge-pill" href="contact.html">Contact Us</a>
+	</nav>
+    <article>
+    	<form name="contact" method="get" target="_blank" onsubmit="return validateForm();">
+    		<div class="col-9 container">
+			<div class="form-group-row">
+				<label for="name" class="col-5 col-form-label">Name:</label>
+				<input type="name" id="name" name="name" pattern="^[a-zA-Z]+ [a-zA-Z]+$" placeholder="First Last">
+			</div>
+			<div class="form-group-row">
+				<label for="email" class="col-5 col-form-label">Email:</label>
+				<input type="email" id="email" name="email" aria-describedby="emailHelp" placeholder="Your email address">
+			</div>
+			<div class="form-group-row">
+				<label for="phone" class="col-5 col-form-label">Phone:</label>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX">
+			</div>
+			<div class="form-group-row">
+				<label for="reason" class="col-5 col-form-label">Reason for Inquiry:</label>
+				<select id="reason" name="reason">
+					<option value="default" selected="catering">Catering (default)</option>
+					<option value="private">Private Party</option>
+					<option value="feedback">Feedback</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div class="form-group-row">
+				<label for="info" class="col-5 col-form-label">Additional Information:</label>
+				<textarea id="info" name="info" placehold="Any additional information" style="height: 50px;"></textarea>
+			</div>
+			<fieldset>
+			<div class="form-row">
+				<label for="history" class="col-5 col-form-label">Have you been to the restaurant?</label>
+				<div class="col-1 form-check form-check-inline">
+					<input class="form-check-input" type="radio" id="choice1" name="questionaire" value="no">
+					<label class="form-check-label">No</label>
+				</div>
+				<div class="col-1 form-check form-check-inline">
+					<input class="form-check-input" type="radio" id="choice2" name="questionaire" value="yes">
+					<label class="form-check-label">Yes</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<label for="contact" class="col-5 col-form-label">Best days to contact you:</label>
+				<div class="col-1 form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="mon" name="day" value="yes">
+					<label class="form-check-label" for="mon">M</label>
+				</div>
+				<div class="col-1 form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="tue" name="day" value="yes">
+					<label class="form-check-label" for="tue">T</label>
+				</div>
+				<div class="col-1 form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="wed" name="day" value="yes">
+					<label class="form-check-label" for="wed">W</label>
+				</div>
+				<div class="col-1 form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="thu" name="day" value="yes">
+					<label class="form-check-label" for="thu">Th</label>
+				</div>
+				<div class="col-1 form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="fri" name="day" value="yes">
+					<label class="form-check-label" for="fri">F</label>
+				</div>
+			</div>
+			<div class="col-10" style="float:right;">
+				<input class="btn btn-primary" type="submit" name="submit" value="Send Request" style="margin-left: 25px;">
+			</div>
+		</div>
+		</fieldset>
+		</form>
+	</article>
+	<footer>
+		<p>
+			4253 S Ouch Drive, Accident, Maryland 21520
+		</p>
+		<p>
+			(301) 555-4253
+		</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</center>
+</html>

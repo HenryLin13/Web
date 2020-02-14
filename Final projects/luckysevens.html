@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+Name: Henry Lin
+Date Created: February 11th, 2020
+Most recent revision: February 11th, 2020
+-->
+<html lang="en">
+	<head>
+		<!-- Tab title and initialize css/bootstrap -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Lucky Sevens</title>
+		<script type="text/JavaScript" src="luckysevens.js"></script>
+   		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+		<h1>Lucky Sevens</h1>
+		<form name="betting" onsubmit="return validateItems();" onreset="resetForm();" class="form-inline">
+			<div class="form-group">
+				<label for="startingBet" style="margin-right: 10px;"><strong>Starting Bet:</strong></label>
+				$<input type="number" class="form-control" id="startingBet">
+			</div>
+			<br />
+			<button type="submit" id="playButton" class="btn btn-default" style="margin-left: 50px; margin-top: 20px;">Play!</button>
+			<button type="reset" id="playAgainButton" class="btn btn-default" style="margin-left: 50px; margin-top: 20px; display: none;">Play Again?</button>
+		</form>
+		<br />
+		<hr />
+		<table id="results" class="table table-striped" style="display:none;">
+			<tr>
+				<td><strong>Starting Bet</strong></td>
+				<td><span id="bet"></span></td>
+			</tr>
+			<tr>
+				<td>Total Rolls Before Going Broke</td>
+				<td><span id="timesPlayed"></span></td>
+			</tr>
+			<tr>
+				<td>Highest Amount Won</td>
+				<td><span id="highest"></span></td>
+			</tr>
+			<tr>
+				<td>Roll Count at Highest Amount Won</td>
+				<td><span id="highestRoll"></span></td>
+			</tr>
+		</table>
+	</div>
+	</body>
+</html>

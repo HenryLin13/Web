@@ -1,0 +1,107 @@
+/*
+Name: Henry Lin
+Date Created: February 10th, 2020
+Most recent revision: February 13th, 2020
+*/
+body{
+	background-color: #804215;
+	font-family: arial, helvetica, sans-serif;
+	color: #0d1f2d;
+	text-align: justify;
+	max-width: 900px;
+	margin: auto;
+}
+footer{
+	background-color: #061739;
+	color: #fff;
+	height: 100px;
+	text-align: center;
+	padding: 20px 10px 20px 10px;
+}
+header.jumbotron{
+	background-color: #061739;
+	color: #fff;
+	margin: 0px;
+	padding: 10px;
+}
+h1{
+	font-family: 'Legend M54';
+	src: url('fonts/Legend M54');
+	font-size: 5em;
+	margin: 0px;
+}
+nav{
+	background-color: #552500;
+    border-top: thin #5DAD55 solid;
+    border-bottom: thin #5DAD55 solid;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+nav .btn:hover{
+	background-color: #91D08A;
+	color: #2B426F;
+	font-weight: bold;
+}
+nav .btn:active{
+	font-weight: bold;
+}
+nav .btn:visited{
+	color:#fff;
+}
+nav .btn{
+	background-color: #2B426F;
+	color: #91D08A;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 16px;
+}
+table{
+	width:100%;
+	text-align: center;
+}
+th{
+	font-size: 1.2em;
+}
+td{
+	vertical-align: top;
+}
+div#name{
+	font-weight: bold;
+	text-align: center;
+}
+#desc{
+	text-align: center;
+	font-size: 0.9em;
+}
+#drink{
+	text-align: left;
+}
+article{
+	background-color: #D49768;
+}
+img{
+	width: 100%;
+	display: block;
+}
+form{
+	display: block;
+
+}
+label{
+	font-weight: bold;
+	text-align: right;
+	vertical-align: top;
+}
+input, select, textarea{
+	vertical-align: bottom;
+	width: 175px;
+}
+figcaption{
+	font-size: 1.8em;
+}
+.clear-float{
+	clear:both;
+}
